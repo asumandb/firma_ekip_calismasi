@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firma Tanıtım - Anasayfa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        body {
+          font-family: 'Segoe UI', sans-serif;
+          margin: 0;
+          padding: 0;
+          overflow-x: hidden;
+        }
+        .hero {
+          background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                      url('images/3106.jpg') no-repeat center center;
+          background-size: cover;
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          color: white;
+          position: relative;
+        }
+        .hero h1 {
+          font-size: 4rem;
+        }
+        .hero p {
+          font-size: 1.5rem;
+        }
+        .navbar {
+          background: transparent !important;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: 10;
+        }
+        .navbar .nav-link, .navbar .navbar-brand {
+          color: white !important;
+          transition: color 0.3s;
+        }
+        .navbar .nav-link:hover, .navbar .navbar-brand:hover {
+          color: #0d6efd !important; 
+        }
+      </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">Nova 3106</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html" >Ana Sayfa</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#hizmetler" >Hizmetler</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#projeler" >Projeler</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#misyonvizyon" >Misyon&Vizyon</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#hakkımızda" >Hakkımızda</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#bizeulasin" >Bize Ulaşın</a></li>
+
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="anasayfa" class="hero">
+        <div class="container">
+            <h1 class="animate_animated animate_fadeInDown">NOVA 3106 HOŞ GELDİNİZ</h1>
+            <p class="animate_animated animate_fadeInUp animate_delay-1s">Yenilikçi Çözümlerle Geleceğe Birlikte Yürüyoruz</p>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () =>{
+            document.querySelector('nav').classList.add('animate__animated', 'animate__fadeInDown');
+        });
+    </script>
+</body>
+
+</html>
